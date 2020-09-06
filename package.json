@@ -26,10 +26,11 @@
   "devDependencies": {
     "@types/katex": "0.11.0",
     "@types/node": "13.13.16",
+    "@types/node-fetch": "^2.5.7",
     "@types/react": "16.9.49",
     "husky": "4.2.5",
-    "lint-staged": "9.5.0",
-    "prettier": "1.19.1",
+    "lint-staged": "10.3.0",
+    "prettier": "2.1.1",
     "typescript": "3.9.7"
   }
 }
