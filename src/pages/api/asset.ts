@@ -25,7 +25,7 @@ export default async function notionApi(
 
       if (signedUrls.length === 0) {
         console.error('Failed to get signedUrls', urlsResponse)
-        return handleData(res, {
+        return await handleData(res, {
           status: 'error',
           message: 'Failed to get asset URL',
         })

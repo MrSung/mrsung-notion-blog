@@ -4,7 +4,7 @@ import ExtLink from './ext-link'
 import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
-const navItems: { label: string; page?: string; link?: string }[] = [
+const navItems: Array<{ label: string; page?: string; link?: string }> = [
   { label: 'Home', page: '/' },
   { label: 'Blog', page: '/blog' },
   { label: 'Contact', page: '/contact' },

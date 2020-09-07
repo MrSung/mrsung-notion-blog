@@ -170,7 +170,7 @@ const RenderPost = ({ post, redirect, preview }) => {
           const { type, properties, id, parent_id } = value
           const isLast = blockIdx === post.content.length - 1
           const isList = listTypes.has(type)
-          let toRender = []
+          const toRender = []
 
           if (isList) {
             listTagName = components[type === 'bulleted_list' ? 'ul' : 'ol']
@@ -192,7 +192,7 @@ const RenderPost = ({ post, redirect, preview }) => {
             toRender.push(
               React.createElement(
                 listTagName,
-                { key: listLastId! },
+                { key: listLastId },
                 Object.keys(listMap).map((itemId) => {
                   if (listMap[itemId].isNested) return null
 
@@ -295,7 +295,7 @@ const RenderPost = ({ post, redirect, preview }) => {
                   <Comp
                     key={!useWrapper ? id : undefined}
                     src={`/api/asset?assetUrl=${encodeURIComponent(
-                      display_source as any
+                      display_source
                     )}&blockId=${id}`}
                     controls={!isImage}
                     alt={`An ${isImage ? 'image' : 'video'} from Notion`}
