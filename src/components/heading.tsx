@@ -9,9 +9,9 @@ const collectText = (el, acc = []) => {
 
 export default ({ children: component, id }: { children: any; id?: any }) => {
   const children = component.props.children || ''
-  let text = children
+  const text = children
 
-  if (null == id) {
+  if (id == null) {
     id = collectText(text)
       .toLowerCase()
       .replace(/\s/g, '-')
