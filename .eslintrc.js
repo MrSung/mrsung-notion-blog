@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     'standard-with-typescript',
+    'plugin:react/recommended',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
   ],
@@ -11,5 +12,11 @@ module.exports = {
   },
   parserOptions: {
     project: './tsconfig.json',
+  },
+  rules: {},
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 }
