@@ -27,10 +27,10 @@
   },
   "devDependencies": {
     "@types/katex": "0.11.0",
-    "@types/node": "13.13.16",
+    "@types/node": "13.13.19",
     "@types/node-fetch": "2.5.7",
     "@types/react": "16.9.49",
-    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/eslint-plugin": "4.1.0",
     "eslint": "7.8.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-standard-with-typescript": "19.0.1",
