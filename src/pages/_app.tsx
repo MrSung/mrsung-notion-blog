@@ -1,10 +1,11 @@
-import '../styles/global.css'
-import 'katex/dist/katex.css'
-import Footer from '../components/footer'
+import React from 'react'
 
-export default ({ Component, pageProps }) => (
-  <>
-    <Component {...pageProps} />
-    <Footer />
-  </>
+import '../styles/global.css'
+import '@exampledev/new.css'
+import 'katex/dist/katex.css'
+
+const _App = ({ Component, pageProps }): React.ReactNode => (
+  <Component {...pageProps} />
 )
+
+export default _App
